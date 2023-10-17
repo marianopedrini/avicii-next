@@ -18,6 +18,10 @@ const config: Config = {
     },
     container: {
       center: true,
+      padding: {
+        DEFAULT: '0.75rem',
+        md: '0'
+      },
     },
   },
   plugins: [],

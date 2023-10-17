@@ -16,9 +16,11 @@
 
 .hero-bg {
     -webkit-mask-image: url('/images/logo-mask.svg');
+    -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: bottom center;
     mask-image: url('/images/logo-mask.svg');
+    mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: bottom center;
 }

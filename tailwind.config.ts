@@ -16,6 +16,9 @@ const config: Config = {
         leather: '#977A58',
       },
     },
+    container: {
+      center: true,
+    },
   },
   plugins: [],
 };

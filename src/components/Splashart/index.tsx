@@ -1,6 +1,7 @@
 const Splashart = () => {
   return (
-    <div className='hidden h-screen w-full bg-grey flex flex-col items-center justify-center'>
+    <div className='hidden h-screen w-full bg-grey flex-col items-center justify-center'>
+    {/* <div className='h-screen w-full bg-grey flex flex-col items-center justify-center'> */}
         <svg width="380" height="88" viewBox="0 0 380 88" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_4_80)">
                 <path d="M77.0345 0.418162L0 77.8712V88H10.1604L77.0345 20.8152V88H91.3515V0.278774H77.0345V0.418162Z" fill="#E0E0E0"/>

@@ -4,9 +4,9 @@ import FullViewportComponent from '@/components/FullViewportComponent';
 const Hero = () => {
   return (
     <FullViewportComponent centerContent={true}>
-      <section className="container h-screen">
+      <section className="container h-screen flex flex-col items-center justify-center">
         <Image
-            className="hero-img mx-auto mt-40"
+            className="hero-img mx-auto pt-20"
             src={'/images/hero.png'}
             width={1015}
             height={459}

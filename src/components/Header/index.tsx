@@ -3,10 +3,10 @@ import Link from "next/link"
 
 const Header = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 p-10 z-50">
+    <div className="fixed top-0 left-0 right-0 p-10 z-50 bg-black/50 backdrop-blur-md">
         <Link href={'https://avicii.com/'} target="_blank" className="flex justify-center group">
             <Image src={"/logo.svg"} width={50} height={23} alt="Avicii logo" />
-            <div className="">
+            <div>
                 <Image src={"/avicii.svg"} width={100} height={23} alt="Avicii logo" />
             </div>
         </Link>

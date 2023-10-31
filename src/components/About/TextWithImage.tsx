@@ -14,7 +14,7 @@ const TextWithImage = ({ position, content }: TextWithImageProps) => {
           <h3 className="text-6xl md:text-7xl font-medium mb-14">{title}</h3>
           <div className="flex flex-col gap-6">
             {texts.map((text) => (
-              <p className="text-lg md:text-xl">{text}</p>
+              <p className="text-lg md:text-xl" key={text}>{text}</p>
             ))}
           </div>
         </div>

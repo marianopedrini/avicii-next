@@ -24,7 +24,7 @@ const AlbumDetail = ({ album }: AlbumDetailProps) => {
         <ParallaxImage img={img} />
 
         {/* Left section */}
-        <div className="flex flex-col items-center gap-6 z-10 md:col-span-4 md:px-12">
+        <div className="flex flex-col items-center gap-6 z-20 md:col-span-4 md:px-12">
           <figure>
             <Image
               className="shadow-md rounded-md"
@@ -41,7 +41,7 @@ const AlbumDetail = ({ album }: AlbumDetailProps) => {
         </div>
 
         {/* Right section */}
-        <div className="flex flex-col z-10 px-4 w-full md:col-span-2 md:px-0 md:mt-12">
+        <div className="flex flex-col z-20 px-4 w-full md:col-span-2 md:px-0 md:mt-12">
           <h3 className="text-4xl font-semibold">{title}</h3>
           <p className="text-lg text-westar/70">
             Album - {songs.length} songs - {totalDuration}

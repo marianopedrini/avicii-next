@@ -29,7 +29,7 @@ const ParallaxImage = ({ img }: ParallaxImageProps) => {
   }, []);
   return (
     <Image
-      className="hidden absolute top-12 left-1/4 blur-md opacity-40 md:block"
+      className="hidden absolute top-12 left-1/4 blur-md opacity-40 z-10 md:block"
       src={img.url}
       alt={img.alt}
       width={500}

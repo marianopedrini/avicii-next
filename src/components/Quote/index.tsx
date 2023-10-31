@@ -15,10 +15,10 @@ const Quote = () => {
                     height={98}
                 />
                 <p className="text-2xl md:text-3xl leading-[2.32rem] w-5/6">
-                    "I discovered when I started earning money that I didn't really need
-                    them. When you have such a surplus of money you don't need, the most
+                    &quot;I discovered when I started earning money that I didn&apos;t really need
+                    them. When you have such a surplus of money you don&apos;t need, the most
                     sensible, most human and most obvious thing to do is to give to
-                    people in need"
+                    people in need&quot;
                 </p>
                 <Image
                     className="absolute right-0 bottom-0"
@@ -29,7 +29,7 @@ const Quote = () => {
                 />
             </div>
         </blockquote>
-        <h5 className="text-3xl md:text-6xl text-end z-10">- Tim “Avicii” Bergling</h5>
+        <h5 className="text-3xl md:text-6xl text-end z-10">- Tim &quot;Avicii&quot; Bergling</h5>
         <Image
           className="absolute right-0 -top-1/4"
           src={'/images/tim-quote.webp'}

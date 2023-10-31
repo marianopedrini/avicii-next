@@ -6,6 +6,7 @@ import Hero from '@/components/Hero';
 import HeroNameLogo from '@/components/HeroNameLogo';
 import Quote from '@/components/Quote';
 import About from '@/components/About';
+import Discography from '@/components/Discography';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroNameLogo />
       <Quote />
       <About />
+      <Discography />
 
     </main>
   );

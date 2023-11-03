@@ -19,10 +19,34 @@
     width: fit-content !important;
     background: none !important;
     position: relative;
+    opacity: 1 !important;
+    color: #6d6d6d;
+    mix-blend-mode: difference;
+}
+
+.swiper-pagination-bullet-active {
+    color: var(--white);
 }
 
 .swiper-pagination-bullet p{
     letter-spacing: 1px;
+    mix-blend-mode: difference;
+    text-align: left;
+}
+
+.swiper-pagination-bullet::before {
+    content: '';
+    width: 0;
+    background-color: var(--white);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: -4px;
+    transition: all .2s ease-in-out;
+}
+
+.swiper-pagination-bullet:hover::before {
+    width: calc(100% + 4px);
 }
 
 .swiper-pagination-bullet-active::after {

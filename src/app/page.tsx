@@ -7,6 +7,7 @@ import HeroNameLogo from '@/components/HeroNameLogo';
 import Quote from '@/components/Quote';
 import About from '@/components/About';
 import Discography from '@/components/Discography';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Quote />
       <About />
       <Discography />
+      <Footer />
 
     </main>
   );

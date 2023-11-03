@@ -15,6 +15,9 @@ const config: Config = {
         westar: '#E1DFDD',
         leather: '#977A58',
       },
+      backgroundImage: {
+        'footer-image': "url('/images/footer-bg.png')",
+      }
     },
     container: {
       center: true,

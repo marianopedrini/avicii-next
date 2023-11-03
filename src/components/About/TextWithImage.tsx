@@ -23,7 +23,7 @@ const TextWithImage = ({ position, content }: TextWithImageProps) => {
           src={img}
           width={380}
           height={88}
-          alt="Tim Bergling"
+          alt=""
         />
       </div>
     </section>

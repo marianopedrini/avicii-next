@@ -244,4 +244,35 @@ const discography = [
   },
 ];
 
-export { quote, aboutTim, aboutFoundation, discography };
+const sitesLinks = [
+    {
+        text: 'avicii.com',
+        url: 'https://avicii.com/',
+    },
+    {
+        text: 'timberglingfoundation.org',
+        url: 'https://www.timberglingfoundation.org/',
+    },
+]
+
+const socialMedia = [
+    {
+        name: 'Spotify',
+        icon: 'spotify.svg',
+        url: 'https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6?si=IYzh3XGLTo2t_CzCMTro0g',
+    },
+    {
+        name: 'Youtube',
+        icon: 'youtube.svg',
+        url: 'https://www.youtube.com/user/AviciiOfficialVEVO',
+    },
+    {
+        name: 'Apple Music',
+        icon: 'apple-music.svg',
+        url: 'https://itunes.apple.com/ca/artist/avicii/298496035',
+    },
+]
+
+const footerDisclaimer = 'This site is a fan project dedicated to Tim, providing information and entertainment. We have no official affiliation with Avicii, and we are non-profit. The content is for entertainment and informational purposes, and we do not guarantee its accuracy. We use material with respect to copyright and are not responsible for linked external websites.'
+
+export { quote, aboutTim, aboutFoundation, discography, sitesLinks, socialMedia, footerDisclaimer };

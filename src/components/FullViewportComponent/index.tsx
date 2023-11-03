@@ -1,16 +1,25 @@
-import React from 'react'
+import React from 'react';
 
 type FullViewportComponentProps = {
-    hildren: React.ReactElement, 
-    centerContent: boolean
-}
+  children: React.ReactElement;
+  centerContent: boolean;
+  bgColor?: 'white' | null;
+  extraClasses?: string;
+};
 
-const FullViewportComponent = ({children, centerContent} : { children: React.ReactElement, centerContent: boolean}) => {
+const FullViewportComponent = ({
+  children,
+  centerContent,
+  bgColor,
+  extraClasses,
+}: FullViewportComponentProps) => {
   return (
-    <div className={`w-full min-h-screen ${centerContent? 'flex items-center justify-center' : ''}`}>
-        {children}
+    <div
+      className={`w-full min-h-screen ${centerContent ? 'flex items-center justify-center' : ''} ${bgColor === 'white' ? 'bg-white text-black' : ''} ${extraClasses ? extraClasses : ''}`}
+    >
+      {children}
     </div>
-  )
-}
+  );
+};
 
-export default FullViewportComponent
+export default FullViewportComponent;

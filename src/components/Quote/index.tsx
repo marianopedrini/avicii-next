@@ -3,41 +3,48 @@ import Image from 'next/image';
 
 const Quote = () => {
   return (
-    <FullViewportComponent centerContent={true}>
-      <section className="container relative flex flex-col">
-        <blockquote className="bg-black/30 z-10 md:bg-none">
-            <div className="p-4 relative max-w-[840px]">
-                <Image
-                    className="absolute left-0 top-0"
-                    src={'/images/start-quote.png'}
-                    alt="Start quote"
-                    width={95}
-                    height={98}
-                />
-                <p className="text-2xl md:text-3xl leading-[2.32rem] w-5/6">
-                    &quot;I discovered when I started earning money that I didn&apos;t really need
-                    them. When you have such a surplus of money you don&apos;t need, the most
-                    sensible, most human and most obvious thing to do is to give to
-                    people in need&quot;
-                </p>
-                <Image
-                    className="absolute right-0 bottom-0"
-                    src={'/images/end-quote.png'}
-                    alt="End quote"
-                    width={82}
-                    height={86}
-                />
-            </div>
-        </blockquote>
-        <h5 className="text-3xl md:text-6xl text-end z-10">- Tim &quot;Avicii&quot; Bergling</h5>
+    <FullViewportComponent
+      centerContent={true}
+      bgColor={'white'}
+      extraClasses={'relative overflow-hidden'}
+    >
+      <>
+        <section className="container relative flex flex-col px-6 py-10 z-10">
+          <blockquote className="relative bg-white/60 w-full p-4 rounded-md md:w-4/5 max-w-[840px]">
+            <Image
+              className="absolute left-0 top-0"
+              src={'/images/start-quote.svg'}
+              alt="Start quote"
+              width={95}
+              height={98}
+            />
+            <p className="text-2xl leading-[2.32rem] md:text-3xl">
+              &quot;I discovered when I started earning money that I didn&apos;t
+              really need them. When you have such a surplus of money you
+              don&apos;t need, the most sensible, most human and most obvious
+              thing to do is to give to people in need&quot;
+            </p>
+            <Image
+              className="absolute right-0 bottom-14"
+              src={'/images/end-quote.svg'}
+              alt="End quote"
+              width={82}
+              height={86}
+            />
+            <h5 className="text-3xl text-end  mt-12 md:text-5xl">
+              - Tim &quot;Avicii&quot; Bergling
+            </h5>
+          </blockquote>
+        </section>
+
         <Image
-          className="absolute right-0 -top-1/4"
-          src={'/images/tim-quote.webp'}
-          alt="End quote"
-          width={355}
-          height={492}
+          className="absolute right-0 bottom-0 w-[80vw] md:max-w-[594px] md:-right-40 lg:-right-20 xl:right-0"
+          alt="Tim"
+          src={'/images/tim-quote.png'}
+          width={594}
+          height={542}
         />
-      </section>
+      </>
     </FullViewportComponent>
   );
 };

@@ -20,7 +20,7 @@ const AlbumDetail = ({ album }: AlbumDetailProps) => {
   const { id, title, img, spotify, totalDuration, songs } = album;
   return (
     <>
-      <section className="grid grid-cols-1 w-full gap-10 md:grid-cols-6">
+      <section className="grid grid-cols-1 w-full gap-10 md:py-12 md:grid-cols-6">
         <ParallaxImage img={img} />
 
         {/* Left section */}
@@ -35,7 +35,7 @@ const AlbumDetail = ({ album }: AlbumDetailProps) => {
             />
           </figure>
           <div
-            className="w-full"
+            className="w-full lg:w-4/5"
             dangerouslySetInnerHTML={{ __html: spotify }}
           ></div>
         </div>

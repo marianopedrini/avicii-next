@@ -10,8 +10,6 @@ type ParallaxImageProps = {
 const ParallaxImage = ({ img }: ParallaxImageProps) => {
   const imgRef = useRef<HTMLImageElement>(null);
   useEffect(() => {
-    if (imgRef.current) {
-    }
     const parallax = (event: any) => {
       const moving_value = 0.01;
       const x = event.clientX * moving_value;
@@ -29,7 +27,7 @@ const ParallaxImage = ({ img }: ParallaxImageProps) => {
   }, []);
   return (
     <Image
-      className="hidden absolute top-12 left-1/4 blur-md opacity-40 z-10 md:block"
+      className="hidden absolute top-12 left-1/4 blur-md opacity-40 z-10 w-1/2 max-w-[500px] md:block"
       src={img.url}
       alt={img.alt}
       width={500}

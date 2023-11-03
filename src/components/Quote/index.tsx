@@ -11,7 +11,7 @@ const Quote = () => {
     >
       <>
         <Image
-          className="absolute bottom-0 right-0 w-[80vw] md:left-0 md:max-w-[594px]"
+          className="absolute bottom-0 right-0 w-[80vw] scale-x-[-1] md:-left-40 md:max-w-[594px] lg:-left-40 xl:md:left-0"
           alt="Tim"
           src={'/images/tim-quote.png'}
           width={594}
@@ -27,7 +27,7 @@ const Quote = () => {
               width={95}
               height={98}
             />
-            <p className="text-2xl leading-[2.32rem] md:text-3xl">
+            <p className="text-xl leading-[2rem] md:leading-[2.32rem] md:text-3xl">
               &quot;I discovered when I started earning money that I didn&apos;t
               really need them. When you have such a surplus of money you
               don&apos;t need, the most sensible, most human and most obvious

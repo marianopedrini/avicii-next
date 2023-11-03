@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         white: '#E0E0E0',
         black: '#070707',
+        'cod-gray': '#111111',
         grey: '#242424',
         westar: '#E1DFDD',
         leather: '#977A58',

@@ -1,17 +1,12 @@
 import gsap from "gsap";
 
-export const panelsAnimation = () => {
-    const tl = gsap.timeline({})
+export const imgAnimation = () => {
+    const tl = gsap.timeline();
 
-    tl.to('[data-left-panel]', {
-        scaleY: 0,
-        ease: "power2",
-        duration: 1.5
-    }).to('[data-right-panel]', {
-        scaleY: 0,
-        ease: "power2",
-        duration: 1.5
-    }, '<')
+    tl.to('[data-main-img]', {
+        opacity: 1,
+        duration: 1
+    })
 
     return tl;
 }

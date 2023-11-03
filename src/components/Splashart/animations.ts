@@ -14,17 +14,11 @@ export const logoAnimation = (splashartContainerRef: any) => {
     }
   )
     .to('[data-splashart-logo]', {
-      scale: 25,
+      scale: 40,
       duration: 1.5,
+      autoAlpha: 0,
+      ease: "power1.in",
     })
-    .to(
-      splashartContainerRef.current,
-      {
-        autoAlpha: 0,
-        duration: 0.5
-      },
-      '<'
-    );
 
   return tl;
 };

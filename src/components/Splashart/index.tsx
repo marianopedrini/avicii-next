@@ -16,7 +16,7 @@ const Splashart = ({ timeline }: any ) => {
 
   return (
     <div
-      className="fixed top-0 h-screen w-full bg-black flex flex-col items-center justify-center z-[100]"
+      className="fixed top-0 h-screen w-full bg-cod-gray flex flex-col items-center justify-center z-[100]"
       ref={splashartContainerRef}
     >
       {/* <div className='h-screen w-full bg-grey flex flex-col items-center justify-center'> */}

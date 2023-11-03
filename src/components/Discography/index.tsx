@@ -1,5 +1,5 @@
 'use client';
-import FullViewportComponent from '../FullViewportComponent';
+import Section from '../Section';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
@@ -19,7 +19,7 @@ const Discography = () => {
       <h3 className="text-5xl font-medium mb-12 md:mb-8 md:text-center md:text-7xl">
         Discography
       </h3>
-      <FullViewportComponent centerContent={true}>
+      <Section centerContent={true} fullViewport={true}>
         <div className="grid grid-cols-1 md:grid-cols-8">
           <div className="swiper-pagination hidden col-span-1 md:flex flex-col justify-center gap-2 !relative uppercase text-lg font-medium"></div>
 
@@ -44,7 +44,7 @@ const Discography = () => {
             ))}
           </Swiper>
         </div>
-      </FullViewportComponent>
+      </Section>
     </div>
   );
 };

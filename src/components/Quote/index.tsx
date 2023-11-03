@@ -1,10 +1,11 @@
-import FullViewportComponent from '@/components/FullViewportComponent';
+import Section from '@/components/Section';
 import Image from 'next/image';
 
 const Quote = () => {
   return (
-    <FullViewportComponent
+    <Section
       centerContent={true}
+      fullViewport={true}
       bgColor={'white'}
       extraClasses={'relative overflow-hidden'}
     >
@@ -45,7 +46,7 @@ const Quote = () => {
           </blockquote>
         </section>
       </>
-    </FullViewportComponent>
+    </Section>
   );
 };
 

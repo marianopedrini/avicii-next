@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import FullViewportComponent from '@/components/FullViewportComponent';
+import Section from '@/components/Section';
 
 const Hero = () => {
   return (
-    <FullViewportComponent centerContent={true}>
+    <Section centerContent={true} fullViewport={true}>
       <section className="container h-screen flex flex-col items-center justify-center">
         <Image
             className="hero-img mx-auto pt-20"
@@ -18,7 +18,7 @@ const Hero = () => {
           <p className='text-xs tracking-[2px]'>1989.09.08 - 2018.04.20</p>
         </div>
       </section>
-    </FullViewportComponent>
+    </Section>
   );
 };
 

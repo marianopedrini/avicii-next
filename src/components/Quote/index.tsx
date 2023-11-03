@@ -9,7 +9,15 @@ const Quote = () => {
       extraClasses={'relative overflow-hidden'}
     >
       <>
-        <section className="container relative flex flex-col px-6 py-10 z-10">
+        <Image
+          className="absolute bottom-0 right-0 w-[80vw] md:left-0 md:max-w-[594px]"
+          alt="Tim"
+          src={'/images/tim-quote.png'}
+          width={594}
+          height={542}
+        />
+
+        <section className="container relative flex flex-col items-end px-2 py-10 z-10 md:px-6">
           <blockquote className="relative bg-white/60 w-full p-4 rounded-md md:w-4/5 max-w-[840px]">
             <Image
               className="absolute left-0 top-0"
@@ -36,14 +44,6 @@ const Quote = () => {
             </h5>
           </blockquote>
         </section>
-
-        <Image
-          className="absolute right-0 bottom-0 w-[80vw] md:max-w-[594px] md:-right-40 lg:-right-20 xl:right-0"
-          alt="Tim"
-          src={'/images/tim-quote.png'}
-          width={594}
-          height={542}
-        />
       </>
     </FullViewportComponent>
   );
